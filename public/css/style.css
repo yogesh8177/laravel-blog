@@ -1,0 +1,203 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+
+header{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+footer{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+}
+section{
+	flex: 8;
+}
+article{
+	flex: 8;
+}
+
+aside{
+	flex: 2;
+	border: 1px solid black;
+}
+
+.tile{
+	display: block;
+}
+
+.author-name{
+	font-style: italic;
+	font-size: small;
+	background-color: #ff6666;
+	color: #fff;
+	padding: 2px;
+}
+
+.category-box{
+	width: 200px;
+	height: 100px;
+	overflow: auto;
+}
+
+.category-box ol li{
+	padding: 5px;
+	text-align: justify;
+}
+
+.category{
+	font-style: italic;
+	padding: 3px;
+	background-color: #000;
+	color: #fff;
+}
+.category a{
+	text-decoration: none;
+	color: #fff;
+}
+.rating-comment-box{
+	font-style: italic;
+	font-size: small;
+	padding: 5px;
+
+}
+
+.ratings{
+	background-color: #009933;
+	color: #fff;
+	padding: 2px;
+}
+.post-content{
+	text-align: justify;
+	padding: 5px;
+}
+
+.tag{
+	background-color: #996600;
+	padding: 2px;
+	border-radius: 3px;
+
+}
+.tag > a:link, .tag > a:visited{
+	text-decoration: none;
+	color: #fff !important;	
+	font-size: small;
+}
+
+.comment-box{
+	display: block;
+	padding: 5px;
+}
+.comment-box ul{
+	padding-left: 0;
+}
+.comment-box ul li{
+	list-style-type: none;
+	padding: 5px;
+}
+
+.comment-box input{
+	text-align: center;
+}
+
+.user-comments{
+	padding: 5px;
+
+}
+.comment-author{
+	font-size: small;
+	color: #0066ff;
+}
+
+.form{
+	padding: 5px;
+}
+ul.form li{
+	padding: 5px;
+	list-style-type: none;
+}
+
+ul.image-picker{
+	width: 100%;
+	padding-left: 0;
+}
+ul.image-picker li{
+
+	text-align: center;
+	list-style-type: none;
+	padding: 5px;
+	display: inline-block;
+}
+.active-image{
+	width: 300px;
+	padding: 5px;
+	border: 1px solid black;
+	background-color: #000;
+	color: #fff;
+}
+.images{
+	position: relative;
+	padding: 5px;
+	width: 210px;
+	display: block;
+	transition: transform 1s;
+}
+
+.images:hover{
+	transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+}
+
+.images:last-child{
+	content: '';
+	clear: both;
+}
+.select-image{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+.delete-image{
+	cursor: pointer;
+}
+
+.approve{
+	cursor: pointer;
+	padding: 3px;
+	background-color: blue;
+	color: #fff;
+	border-radius: 5px;
+	font-size: small;
+}
+
+.comment-content{
+	padding: 5px;
+	font-weight: 600;
+}
+
+ol.edit-comment-box li{
+	padding: 15px;
+}
+.delete{
+	padding: 5px;
+	font-size: small;
+	color: blue;
+	cursor: pointer;
+}
